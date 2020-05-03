@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GenericRVAdapter</string>
+
+    <string name="txt_question_car">Do you own a car?</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_description_car">Describe your car in a few words</string>
+    <string name="txt_multiple_choice_question">Have you seen or used these accessories?</string>
+    <string name="txt_reverse_camera">Parking Camera</string>
+    <string name="txt_parking_sensor">Parking Sensor</string>
+    <string name="txt_infotainment_system">Infotainment System</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="String" />
+
+        <variable
+            name="actionItemListener"
+            type="com.grvexample.adapter.OnItemActionListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model}"
+            tools:text="@string/txt_multiple_choice_question"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_18"
+            android:padding="@dimen/activity_horizontal_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</layout>

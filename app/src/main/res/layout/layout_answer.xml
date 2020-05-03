@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.grvexample.data.model.Answer" />
+
+        <variable
+            name="actionItemListener"
+            type="com.grvexample.ui.OnMultipleChoiceClickListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+        <RadioButton
+            android:id="@+id/rb_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="@{model.answer}"
+            android:checked="@{model.isSelected}"
+            android:onClick="@{() -> actionItemListener.onMultipleChoiceClicked(position, model)}"
+            tools:text="@string/txt_reverse_camera"
+            android:textSize="@dimen/text_size_16" />
+</layout>
